@@ -8,7 +8,7 @@ Herramienta para llevar a Outlook los contactos guardados en un directorio compa
 
 ### Esta revisión
 
-**2015-01-05 · Registrar el primer paquete ejecutable.** Añade una nota sobre el ejecutable que se preparó en la revisión original. El README conserva la fecha de empaquetado para que los lectores puedan ubicar ese hito en el historial de fuentes.
+**2015-01-05 · Documentar la biblioteca de ejecución y la depuración.** Registra la incorporación histórica de una biblioteca de ejecución y la exclusión de archivos de depuración. Los lectores pueden distinguir la dependencia del entorno de los archivos que la compilación genera.
 
 ### Cómo explorar el código
 
@@ -25,7 +25,7 @@ A tool for bringing contacts from a shared directory into Outlook. It makes dire
 
 ### This revision
 
-**2015-01-05 · Record the first executable package.** Add a note about the executable prepared in the original revision. The README records the packaging date so readers can place that milestone in the source history.
+**2015-01-05 · Document the runtime library and debug exclusions.** Record that the historical revision added a runtime library and excluded debug files. Readers can distinguish the runtime dependency from generated build files.
 
 ### How to explore the source
 
