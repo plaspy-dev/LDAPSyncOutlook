@@ -8,7 +8,7 @@ Herramienta para llevar a Outlook los contactos guardados en un directorio compa
 
 ### Esta revisión
 
-**2015-01-05 · Destacar las opciones de puerto y autenticación.** Agrupa las opciones avanzadas para indicar dónde se eligen el puerto y la autenticación. Esto permite localizar la configuración adicional cuando el directorio de prueba la requiere.
+**2015-01-05 · Recuperar la corrección de desinstalación.** Actualiza el script de NSIS y documenta el cambio en la desinstalación. El mantenedor puede identificar qué parte del instalador debe revisar cuando retira la aplicación de un equipo.
 
 ### Cómo explorar el código
 
@@ -25,7 +25,7 @@ A tool for bringing contacts from a shared directory into Outlook. It makes dire
 
 ### This revision
 
-**2015-01-05 · Highlight port and authentication settings.** Group the advanced options to show where to set the port and authentication. Readers can find the extra settings when their test directory requires them.
+**2015-01-05 · Recover the installer removal fix.** Update the NSIS script and document the uninstall change. Maintainers can identify which installer routine to check when removing the application from a machine.
 
 ### How to explore the source
 
