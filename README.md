@@ -8,7 +8,7 @@ Herramienta para llevar a Outlook los contactos guardados en un directorio compa
 
 ### Esta revisión
 
-**2015-01-05 · Explicar cómo configurar la sincronización.** Documenta el servidor, la base de búsqueda, la carpeta de destino y el intervalo de actualización. Indica dónde abrir las opciones para preparar una prueba desde Outlook o desde la aplicación de Windows.
+**2015-01-05 · Identificar el destino para Contactos de Windows.** Ordena los campos de configuración en una tabla y explica cuándo usar la carpeta de Contactos de Windows. El lector puede elegir un destino compatible con el programa de correo que consulta esos registros.
 
 ### Cómo explorar el código
 
@@ -25,7 +25,7 @@ A tool for bringing contacts from a shared directory into Outlook. It makes dire
 
 ### This revision
 
-**2015-01-05 · Explain how to configure contact synchronization.** Document the server, search base, destination folder, and update interval. Explain where to open the options to prepare a test from Outlook or the Windows application.
+**2015-01-05 · Identify the Windows Contacts destination.** Organize the settings in a table and explain when to use the Windows Contacts folder. Readers can select a destination their mail client can read.
 
 ### How to explore the source
 
