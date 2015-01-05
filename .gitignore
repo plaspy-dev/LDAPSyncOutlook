@@ -7,3 +7,5 @@
 *.user
 *.suo
 *.class
+/demo/ldap/bin/
+/demo/ldap/obj/

@@ -1,0 +1,20 @@
+dn: dc=example,dc=test
+objectClass: top
+objectClass: dcObject
+objectClass: organization
+dc: example
+o: Example Sandbox Directory
+
+dn: ou=People,dc=example,dc=test
+objectClass: organizationalUnit
+ou: People
+
+dn: cn=Alicia Ejemplo,ou=People,dc=example,dc=test
+objectClass: top
+objectClass: inetOrgPerson
+cn: Alicia Ejemplo
+sn: Ejemplo
+givenName: Alicia
+uid: alicia-demo
+mail: alicia@example.test
+description: Fictional LDAP fixture
