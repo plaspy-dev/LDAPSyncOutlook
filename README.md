@@ -22,7 +22,7 @@ LDAP is a protocol for looking up entries in a shared directory. This project co
 
 The initial January 1, 2015 revision contains documentation. The source arrives on January 5. The revisions retain the dates recorded in the original archive. The 2026 reconstruction adds the v145 projects and the local trial.
 
-- **2015-01-05** The archived record identifies a packaging step. The reconstructed source and project files match the preceding revision.
+- **2015-01-05** The archived record identifies another packaging step. This reconstruction records the step in the history section.
 
 ### Requirements
 
@@ -96,7 +96,7 @@ LDAP es un protocolo para consultar fichas en un directorio compartido. Este pro
 
 La primera revisión del 1 de enero de 2015 contiene documentación. El código entra el 5 de enero. Las revisiones conservan las fechas que registra el respaldo original. La preparación de 2026 añade los proyectos v145 y la prueba local.
 
-- **2015-01-05** El registro archivado identifica un paso de empaquetado. Las fuentes y los proyectos reconstruidos coinciden con la revisión anterior.
+- **2015-01-05** El registro archivado identifica otro paso de empaquetado. La reconstrucción registra el paso en la sección Historial.
 
 ### Requisitos
 
