@@ -8,7 +8,7 @@ Herramienta para llevar a Outlook los contactos guardados en un directorio compa
 
 ### Esta revisión
 
-**2015-01-05 · Documentar la biblioteca de ejecución y la depuración.** Registra la incorporación histórica de una biblioteca de ejecución y la exclusión de archivos de depuración. Los lectores pueden distinguir la dependencia del entorno de los archivos que la compilación genera.
+**2015-01-05 · Explicar la copia de contactos hacia Outlook.** Introduce una descripción del flujo que toma contactos del directorio y los guarda en Outlook. El lector puede identificar el origen, el destino y la función de la aplicación antes de revisar su configuración.
 
 ### Cómo explorar el código
 
@@ -25,7 +25,7 @@ A tool for bringing contacts from a shared directory into Outlook. It makes dire
 
 ### This revision
 
-**2015-01-05 · Document the runtime library and debug exclusions.** Record that the historical revision added a runtime library and excluded debug files. Readers can distinguish the runtime dependency from generated build files.
+**2015-01-05 · Explain directory contact copying to Outlook.** Introduce the workflow that reads directory contacts and saves them in Outlook. Readers can identify the source, destination, and purpose before checking the setup.
 
 ### How to explore the source
 
