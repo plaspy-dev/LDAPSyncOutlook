@@ -8,7 +8,7 @@ Herramienta para llevar a Outlook los contactos guardados en un directorio compa
 
 ### Esta revisión
 
-**2015-01-05 · Explicar la copia de contactos hacia Outlook.** Introduce una descripción del flujo que toma contactos del directorio y los guarda en Outlook. El lector puede identificar el origen, el destino y la función de la aplicación antes de revisar su configuración.
+**2015-01-05 · Explicar cómo configurar la sincronización.** Documenta el servidor, la base de búsqueda, la carpeta de destino y el intervalo de actualización. Indica dónde abrir las opciones para preparar una prueba desde Outlook o desde la aplicación de Windows.
 
 ### Cómo explorar el código
 
@@ -25,7 +25,7 @@ A tool for bringing contacts from a shared directory into Outlook. It makes dire
 
 ### This revision
 
-**2015-01-05 · Explain directory contact copying to Outlook.** Introduce the workflow that reads directory contacts and saves them in Outlook. Readers can identify the source, destination, and purpose before checking the setup.
+**2015-01-05 · Explain how to configure contact synchronization.** Document the server, search base, destination folder, and update interval. Explain where to open the options to prepare a test from Outlook or the Windows application.
 
 ### How to explore the source
 
