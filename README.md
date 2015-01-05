@@ -8,7 +8,7 @@ Herramienta para llevar a Outlook los contactos guardados en un directorio compa
 
 ### Esta revisión
 
-**2015-01-05 · Identificar el destino para Contactos de Windows.** Ordena los campos de configuración en una tabla y explica cuándo usar la carpeta de Contactos de Windows. El lector puede elegir un destino compatible con el programa de correo que consulta esos registros.
+**2015-01-05 · Destacar las opciones de puerto y autenticación.** Agrupa las opciones avanzadas para indicar dónde se eligen el puerto y la autenticación. Esto permite localizar la configuración adicional cuando el directorio de prueba la requiere.
 
 ### Cómo explorar el código
 
@@ -25,7 +25,7 @@ A tool for bringing contacts from a shared directory into Outlook. It makes dire
 
 ### This revision
 
-**2015-01-05 · Identify the Windows Contacts destination.** Organize the settings in a table and explain when to use the Windows Contacts folder. Readers can select a destination their mail client can read.
+**2015-01-05 · Highlight port and authentication settings.** Group the advanced options to show where to set the port and authentication. Readers can find the extra settings when their test directory requires them.
 
 ### How to explore the source
 
