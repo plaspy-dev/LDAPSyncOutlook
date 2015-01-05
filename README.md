@@ -8,7 +8,7 @@ Herramienta para llevar a Outlook los contactos guardados en un directorio compa
 
 ### Esta revisión
 
-**2015-01-05 · Recuperar la sincronización de contactos con Outlook.** Incorpora los proyectos de escritorio y del complemento junto al instalador NSIS. Los modelos y rutinas recuperados muestran cómo se leen los contactos del directorio y se actualiza la carpeta de destino.
+**2015-01-05 · Registrar el primer paquete ejecutable.** Añade una nota sobre el ejecutable que se preparó en la revisión original. El README conserva la fecha de empaquetado para que los lectores puedan ubicar ese hito en el historial de fuentes.
 
 ### Cómo explorar el código
 
@@ -25,7 +25,7 @@ A tool for bringing contacts from a shared directory into Outlook. It makes dire
 
 ### This revision
 
-**2015-01-05 · Recover Outlook contact synchronization.** Recover the desktop and add-in projects alongside the NSIS installer. The recovered models and routines show how directory contacts are read and written to the target folder.
+**2015-01-05 · Record the first executable package.** Add a note about the executable prepared in the original revision. The README records the packaging date so readers can place that milestone in the source history.
 
 ### How to explore the source
 
