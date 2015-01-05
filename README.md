@@ -22,7 +22,7 @@ LDAP is a protocol for looking up entries in a shared directory. This project co
 
 The initial January 1, 2015 revision contains documentation. The source arrives on January 5. The revisions retain the dates recorded in the original archive. The 2026 reconstruction adds the v145 projects and the local trial.
 
-- **2015-01-05** Add the Windows client, Outlook add-in, shared LDAP reader and NSIS installer. An operator can configure a directory and choose where Outlook should store its contacts.
+- **2015-01-05** The archived record identifies a packaging step. The reconstructed source and project files match the preceding revision.
 
 ### Requirements
 
@@ -96,7 +96,7 @@ LDAP es un protocolo para consultar fichas en un directorio compartido. Este pro
 
 La primera revisión del 1 de enero de 2015 contiene documentación. El código entra el 5 de enero. Las revisiones conservan las fechas que registra el respaldo original. La preparación de 2026 añade los proyectos v145 y la prueba local.
 
-- **2015-01-05** Agrega el cliente de Windows, el complemento de Outlook, el lector LDAP compartido y el instalador NSIS. El operador puede configurar un directorio y elegir dónde guardar sus contactos.
+- **2015-01-05** El registro archivado identifica un paso de empaquetado. Las fuentes y los proyectos reconstruidos coinciden con la revisión anterior.
 
 ### Requisitos
 
