@@ -22,7 +22,7 @@ LDAP is a protocol for looking up entries in a shared directory. This project co
 
 The initial January 1, 2015 revision contains documentation. The source arrives on January 5. The revisions retain the dates recorded in the original archive. The 2026 reconstruction adds the v145 projects and the local trial.
 
-- **2015-01-05** The archive retains the configuration and installation sources from the preceding revision. This history entry identifies that snapshot.
+- **2015-01-05** Unregister the Outlook add-in with UnRegDLL during uninstall to remove its COM registration.
 
 ### Requirements
 
@@ -96,7 +96,7 @@ LDAP es un protocolo para consultar fichas en un directorio compartido. Este pro
 
 La primera revisión del 1 de enero de 2015 contiene documentación. El código entra el 5 de enero. Las revisiones conservan las fechas que registra el respaldo original. La preparación de 2026 añade los proyectos v145 y la prueba local.
 
-- **2015-01-05** El respaldo conserva la configuración y las fuentes de instalación de la revisión anterior. La entrada de historial identifica esa versión.
+- **2015-01-05** Desregistra el complemento de Outlook con UnRegDLL durante la desinstalación para retirar su registro COM.
 
 ### Requisitos
 
