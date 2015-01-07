@@ -8,7 +8,7 @@ Herramienta para llevar a Outlook los contactos guardados en un directorio compa
 
 ### Esta revisión
 
-**2015-01-05 · Recuperar la corrección de desinstalación.** Actualiza el script de NSIS y documenta el cambio en la desinstalación. El mantenedor puede identificar qué parte del instalador debe revisar cuando retira la aplicación de un equipo.
+**2015-01-07 · Sincronizar contactos organizados por grupo.** Actualiza el lector LDAP, el modelo de contactos y la integración con Outlook para procesar grupos del directorio. De esta forma, el flujo de sincronización puede usar los contactos agrupados de la fuente.
 
 ### Cómo explorar el código
 
@@ -25,7 +25,7 @@ A tool for bringing contacts from a shared directory into Outlook. It makes dire
 
 ### This revision
 
-**2015-01-05 · Recover the installer removal fix.** Update the NSIS script and document the uninstall change. Maintainers can identify which installer routine to check when removing the application from a machine.
+**2015-01-07 · Synchronize contacts organized by directory group.** Update the LDAP reader, contact model, and Outlook integration to handle directory groups. The synchronization workflow can then use the contacts grouped in the source.
 
 ### How to explore the source
 
