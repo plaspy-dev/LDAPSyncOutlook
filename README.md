@@ -17,12 +17,13 @@ LDAP is a protocol for looking up entries in a shared directory. This project co
 - Choose an LDAP host, search base and time between synchronizations.
 - Read contact names and email addresses and keep a mapping to the Outlook destination.
 - Configure synchronization from the desktop window or the original Outlook add-in.
+- Include groups and people in the LDAP search. Entries with email follow the same contact workflow.
 
 ### History
 
 The initial January 1, 2015 revision contains documentation. The source arrives on January 5. The revisions retain the dates recorded in the original archive. The 2026 reconstruction adds the v145 projects and the local trial.
 
-- **2015-01-05** Unregister the Outlook add-in with UnRegDLL during uninstall to remove its COM registration.
+- **2015-01-07** Include groups and people in the LDAP search. Opening the window leaves synchronization to its timer. The desktop and add-in remove the Más label and retain the progress bar.
 
 ### Requirements
 
@@ -91,12 +92,13 @@ LDAP es un protocolo para consultar fichas en un directorio compartido. Este pro
 - Elige un servidor LDAP, una base de búsqueda y el intervalo entre sincronizaciones.
 - Lee nombres y correos y conserva la relación con la carpeta de Outlook.
 - Configura la sincronización desde la ventana de escritorio o el complemento original de Outlook.
+- Incluye grupos y personas en la búsqueda LDAP. Las entradas con correo siguen el mismo recorrido de contactos.
 
 ### Historial
 
 La primera revisión del 1 de enero de 2015 contiene documentación. El código entra el 5 de enero. Las revisiones conservan las fechas que registra el respaldo original. La preparación de 2026 añade los proyectos v145 y la prueba local.
 
-- **2015-01-05** Desregistra el complemento de Outlook con UnRegDLL durante la desinstalación para retirar su registro COM.
+- **2015-01-07** Incluye grupos y personas en la búsqueda LDAP. Al abrir la ventana, el temporizador se encarga de la sincronización. El escritorio y el complemento retiran el rótulo Más y conservan la barra de avance.
 
 ### Requisitos
 
