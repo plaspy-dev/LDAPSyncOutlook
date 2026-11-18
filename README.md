@@ -23,7 +23,7 @@ LDAP is a protocol for looking up entries in a shared directory. This project co
 
 The initial January 1, 2015 revision contains documentation. The source arrives on January 5. The revisions retain the dates recorded in the original archive. The 2026 reconstruction adds the v145 projects and the local trial.
 
-- **2015-01-07** Include groups and people in the LDAP search. Opening the window leaves synchronization to its timer. The desktop and add-in remove the Más label and retain the progress bar.
+- **2026-11-18** Add a screenshot from the isolated fictional LDAP lookup recorded on November 20, 2026.
 
 ### Requirements
 
@@ -52,11 +52,17 @@ Use a separate Outlook profile and a fictional LDAP directory. In the desktop wi
 
 ### Project structure
 
+`docs/media/` contains the capture from the LDAP probe.
+
 `demo/ldap/` contains the OpenLDAP fixture and the standalone `Probe.vcxproj`.
 
 `src/LDAPSyncOutlook/` contains the desktop application, `src/LDAPSyncOutlookAddin/` contains the add-in and `src/comun/` implements LDAP retrieval and contact mapping. `src/mapi/` contains historical headers. `installer/` contains the NSIS script. The original projects and headers keep their notices.
 
 ### Verification
+
+The screenshot shows the command-line probe reading Alicia Ejemplo from a loopback directory. It shows the LDAP code that the desktop program and the add-in share.
+
+![The local query returns the fictional contact Alicia Ejemplo](docs/media/ldap-query.png)
 
 The [local LDAP instructions](demo/ldap/README.md) use the same fictional directory as the recorded probe. A separate isolated fixture supplied OpenLDAP for the recorded run.
 
@@ -98,7 +104,7 @@ LDAP es un protocolo para consultar fichas en un directorio compartido. Este pro
 
 La primera revisión del 1 de enero de 2015 contiene documentación. El código entra el 5 de enero. Las revisiones conservan las fechas que registra el respaldo original. La preparación de 2026 añade los proyectos v145 y la prueba local.
 
-- **2015-01-07** Incluye grupos y personas en la búsqueda LDAP. Al abrir la ventana, el temporizador se encarga de la sincronización. El escritorio y el complemento retiran el rótulo Más y conservan la barra de avance.
+- **2026-11-18** Agrega una captura de la consulta LDAP ficticia y aislada que se registró el 20 de noviembre de 2026.
 
 ### Requisitos
 
@@ -127,11 +133,17 @@ Usa un perfil separado de Outlook y un directorio LDAP ficticio. En la ventana d
 
 ### Estructura del proyecto
 
+`docs/media/` contiene la captura del probador LDAP.
+
 `demo/ldap/` contiene el directorio ficticio de OpenLDAP y el proyecto `Probe.vcxproj` del probador.
 
 `src/LDAPSyncOutlook/` contiene la aplicación de escritorio, `src/LDAPSyncOutlookAddin/` el complemento y `src/comun/` la consulta LDAP y la relación de contactos. `src/mapi/` contiene cabeceras históricas. `installer/` contiene el script NSIS. Los proyectos y cabeceras originales conservan sus avisos.
 
 ### Verificación
+
+La captura muestra al probador de consola consultando a Alicia Ejemplo en un directorio local. La misma función de lectura la comparten el programa de escritorio y el complemento.
+
+![La consulta local devuelve a la usuaria ficticia Alicia Ejemplo](docs/media/ldap-query.png)
 
 La [guía local de LDAP](demo/ldap/README.md) usa el mismo directorio ficticio de la sonda registrada. El ensayo usó una instancia local de OpenLDAP preparada por separado.
 
