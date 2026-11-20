@@ -10,12 +10,12 @@
 #include "../comun/AdvancedDlg.h"
 # include "../comun/MyRegKey.h"
 
-#import "libid:2DF8D04C-5BFA-101B-BDE5-00AA0044DE52" rename_namespace("Office") rename("RGB", "MsoRGB") , named_guids
+#import <MSO.DLL> rename_namespace("Office") rename("RGB", "MsoRGB") , named_guids
 // #import "C:\Archivos de programa\Microsoft Office\Office\mso9.dll" rename_namespace("Office"), named_guids
 using namespace Office;
 
 // #import "libid:00062FFF-0000-0000-C000-000000000046" rename_namespace("Outlook") rename("CopyFile", "MsoCopyFile") rename("GetOrganizer", "GetOrganizer1"), named_guids // , raw_interfaces_only
-#import "progid:Outlook.Application" rename_namespace("Outlook") rename("CopyFile", "MsoCopyFile") rename ("GetOrganizer", "GetOrganizer1"), named_guids // , raw_interfaces_only
+#import "MSOUTL.OLB" rename_namespace("Outlook") rename("CopyFile", "MsoCopyFile") rename ("GetOrganizer", "GetOrganizer1"), named_guids rename("GetOnlineMeetingProvider","OutlookOnlineMeetingProvider") // , raw_interfaces_only
 // #import "c:\\Program Files (x86)\\Microsoft Office\\Office15\\MSOUTL.olb" rename_namespace("Outlook"), named_guids // , raw_interfaces_only
 using namespace Outlook;
 // #import "C:\\Program Files (x86)\\Common Files\\Designer\\MSADDNDR.DLL" raw_interfaces_only, raw_native_types, no_namespace, named_guids

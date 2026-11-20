@@ -28,15 +28,15 @@ extern CComModule _Module;
 
 //{{AFX_INSERT_LOCATION}}
 // Microsoft Visual C++ will insert additional declarations immediately before the previous line.
-#import "libid:2DF8D04C-5BFA-101B-BDE5-00AA0044DE52" rename_namespace("Office") rename("RGB", "MsoRGB"), named_guids
+#import <MSO.DLL> rename_namespace("Office") rename("RGB", "MsoRGB"), named_guids
 // #import "C:\Archivos de programa\Microsoft Office\Office\mso9.dll" rename_namespace("Office"), named_guids
 using namespace Office;
 
-#import "libid:00062FFF-0000-0000-C000-000000000046" rename_namespace("Outlook") rename("CopyFile", "MsoCopyFile") rename("GetOrganizer", "GetOrganizer1"), named_guids // , raw_interfaces_only
+#import "MSOUTL.OLB" rename_namespace("Outlook") rename("CopyFile", "MsoCopyFile") rename("GetOrganizer", "GetOrganizer1"), named_guids rename("GetOnlineMeetingProvider","OutlookOnlineMeetingProvider") // , raw_interfaces_only
 // #import "c:\Archivos de programa\Microsoft Office\Office\MSOUTL9.olb" rename_namespace("Outlook"), named_guids // , raw_interfaces_only
 using namespace Outlook;
 
-# import "libid:AC0714F2-3D04-11D1-AE7D-00A0C90F26F4"  raw_interfaces_only, raw_native_types, no_namespace, named_guids 
+# import <MSADDNDR.DLL>  raw_interfaces_only, raw_native_types, no_namespace, named_guids 
 // #import "C:\Archivos de programa\Archivos comunes\designer\MSADDNDR.dll" raw_interfaces_only, raw_native_types, no_namespace, named_guids 
 
 # ifdef REDEMPTION

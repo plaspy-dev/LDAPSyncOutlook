@@ -21,20 +21,18 @@ LDAP is a protocol for looking up entries in a shared directory. This project co
 
 ### History
 
+**2026-11-20.** The compatibility commit points the desktop and add-in imports to the installed Office and Outlook type libraries and assigns the generated symbol a distinct name.
+
 The initial January 1, 2015 revision contains documentation. The source arrives on January 5. The revisions retain the dates recorded in the original archive. The 2026 reconstruction adds the v145 projects and the local trial.
 
 - **2026-11-18** Add a screenshot from the isolated fictional LDAP lookup recorded on November 20, 2026.
 
 ### Requirements
 
-The archived Office imports use the registered type libraries. The local Windows installation cannot resolve all of the older registrations. The standalone probe builds the shared directory reader and can be used without Outlook.
-
 
 Use a Developer PowerShell with the Desktop development with C++ workload, the x86/x64 C++ MFC and ATL components, MSVC v145 14.51.36231 and Windows SDK 10.0.26100.0. Provide the Windows Address Book (WAB) inputs of Windows SDK 7.1 and the type libraries `MSOUTL.OLB` 16.0.19929.20032, `MSO.DLL` from Office 16.0.20527.20196 and `MSADDNDR.DLL` 6.00.8100. The Outlook add-in must match the bitness of the installed Outlook. This solution builds Win32. Use the Office installation paths for your test machine. The build leaves COM registration to the operator. Obtain the WAB headers and x86 library from Microsoft’s Windows SDK 7.1. Use MSOUTL.OLB and MSO.DLL from a licensed installation of 32-bit desktop Outlook and Office. The exact Microsoft package that supplied the tested copy of MSADDNDR.DLL 6.00.8100 could not be identified. If the designer library is unavailable, use the standalone LDAP probe.
 
 ### Getting started
-
-The archived #import directives require Office and Outlook type libraries registered for the original build. On the test host the Win32 solution stopped with C2371, C2556 and C3803 in the generated Outlook header. For an independent local test use the [standalone LDAP probe](demo/ldap/README.md).
 
 Build the solution from the repository root.
 
@@ -60,13 +58,15 @@ Use a separate Outlook profile and a fictional LDAP directory. In the desktop wi
 
 ### Verification
 
-The screenshot shows the command-line probe reading Alicia Ejemplo from a loopback directory. It shows the LDAP code that the desktop program and the add-in share.
+This compatibility commit uses the installed Office and Outlook type libraries from the paths supplied to MSBuild. Its two Outlook imports give the generated online meeting symbol a distinct alias to avoid a header collision. The loopback test checks the shared LDAP lookup with a fictional contact. The import and add-in require an isolated Outlook profile. No such profile was available for the trial.
+
+The solution and LDAP query were repeated on 2026-11-23 on Windows 11 build 26300. The capture is from the November 20, 2026 run of the same probe and fictitious directory. The screenshot shows the command-line probe reading Alicia Ejemplo from a loopback directory. It shows the LDAP code that the desktop program and the add-in share.
 
 ![The local query returns the fictional contact Alicia Ejemplo](docs/media/ldap-query.png)
 
 The [local LDAP instructions](demo/ldap/README.md) use the same fictional directory as the recorded probe. A separate isolated fixture supplied OpenLDAP for the recorded run.
 
-The Windows client and Outlook add-in were outside the runtime test. Use the separate probe against the fictional OpenLDAP directory. An isolated Outlook profile is required to test contact imports or the add-in.
+MSBuild 18.11.1.51303 compiled the Win32 desktop client and add-in. A separate test executable invoked the original LDAP retrieval method against a disposable OpenLDAP 2.5.13+dfsg-5 server at 127.0.0.1. It returned one fictional contact. The trial covered directory retrieval. Writing to Outlook, registering the add-in and running the installer still need a separate Windows and Outlook test profile.
 
 ### Support
 
@@ -102,20 +102,18 @@ LDAP es un protocolo para consultar fichas en un directorio compartido. Este pro
 
 ### Historial
 
+**2026-11-20.** El commit de compatibilidad apunta a las bibliotecas de tipos instaladas de Office y Outlook y asigna un nombre distinto al símbolo generado.
+
 La primera revisión del 1 de enero de 2015 contiene documentación. El código entra el 5 de enero. Las revisiones conservan las fechas que registra el respaldo original. La preparación de 2026 añade los proyectos v145 y la prueba local.
 
 - **2026-11-18** Agrega una captura de la consulta LDAP ficticia y aislada que se registró el 20 de noviembre de 2026.
 
 ### Requisitos
 
-Las importaciones archivadas de Office usan sus bibliotecas de tipos registradas. La instalación de Windows local no resuelve todos los registros antiguos. El probador separado compila la lectura del directorio y funciona sin Outlook.
-
 
 Usa Developer PowerShell con la carga Desarrollo para el escritorio con C++, los componentes MFC y ATL de C++ para x86/x64, MSVC v145 14.51.36231 y Windows SDK 10.0.26100.0. Proporciona los archivos de la libreta de direcciones de Windows (WAB) de Windows SDK 7.1 y las bibliotecas de tipos `MSOUTL.OLB` 16.0.19929.20032, `MSO.DLL` de Office 16.0.20527.20196 y `MSADDNDR.DLL` 6.00.8100. El complemento tiene que coincidir con la arquitectura de Outlook. Esta solución compila para Win32. Usa las rutas de Office de tu equipo de prueba. La compilación deja el registro COM a cargo del operador. Obtén las cabeceras WAB y la biblioteca x86 de Windows SDK 7.1 de Microsoft. Usa MSOUTL.OLB y MSO.DLL de una instalación con licencia de Outlook de escritorio y Office de 32 bits. No se pudo identificar qué paquete de Microsoft aportó la copia probada de MSADDNDR.DLL 6.00.8100. Si falta esa biblioteca, usa el probador LDAP separado.
 
 ### Cómo empezar
-
-Las directivas #import del respaldo requieren las bibliotecas de tipos de Office y Outlook registradas para la compilación original. En el equipo de prueba la solución Win32 se detuvo con C2371, C2556 y C3803 en la cabecera generada de Outlook. Para una prueba local independiente usa la [sonda LDAP](demo/ldap/README.md).
 
 Compila la solución desde la raíz del repositorio.
 
@@ -141,13 +139,17 @@ Usa un perfil separado de Outlook y un directorio LDAP ficticio. En la ventana d
 
 ### Verificación
 
+Este commit de compatibilidad usa las bibliotecas de tipos de Office y Outlook instaladas en las rutas indicadas a MSBuild. Las dos importaciones de Outlook asignan un alias distinto al símbolo de reuniones en línea para evitar el choque en las cabeceras. La prueba local comprueba la consulta LDAP compartida con un contacto ficticio. La importación y el complemento requieren un perfil aislado de Outlook. Ese perfil no estaba disponible para el ensayo.
+
 La captura muestra al probador de consola consultando a Alicia Ejemplo en un directorio local. La misma función de lectura la comparten el programa de escritorio y el complemento.
+
+La solución y la consulta LDAP se repitieron el 2026-11-23 en Windows 11 compilación 26300. La captura corresponde al ensayo del 20 de noviembre de 2026 de la misma sonda y directorio ficticio.
 
 ![La consulta local devuelve a la usuaria ficticia Alicia Ejemplo](docs/media/ldap-query.png)
 
 La [guía local de LDAP](demo/ldap/README.md) usa el mismo directorio ficticio de la sonda registrada. El ensayo usó una instancia local de OpenLDAP preparada por separado.
 
-El cliente de Windows y el complemento quedaron fuera de la prueba de ejecución. Usa el probador separado con el directorio OpenLDAP ficticio. La importación de contactos y el complemento requieren un perfil aislado de Outlook.
+MSBuild 18.11.1.51303 compiló el cliente Win32 y el complemento. Un ejecutable de prueba llamó al método original de lectura contra OpenLDAP 2.5.13+dfsg-5 desechable en 127.0.0.1 y obtuvo un contacto ficticio. La prueba cubrió la consulta. Guardar en Outlook, registrar el complemento y ejecutar el instalador requieren un perfil de prueba separado de Windows y Outlook.
 
 ### Soporte
 
